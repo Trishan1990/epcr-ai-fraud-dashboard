@@ -1,0 +1,11 @@
+claim_id,policy_id,claim_type,fraud_score,risk_level,fraud_driver,recommended_action,estimated_savings
+CLM-1001,POL-8912,Auto Damage,0.82,High,Metadata anomaly + texture artifacts,Escalate to SIU investigator,4200
+CLM-1002,POL-7741,Auto Damage,0.31,Low,No major anomaly,Auto-process eligible,0
+CLM-1003,POL-6654,Auto Damage,0.56,Medium,Lighting inconsistency,Manual review recommended,1200
+CLM-1004,POL-2399,Auto Damage,0.76,High,Duplicate image similarity,Escalate to SIU investigator,3800
+CLM-1005,POL-4811,Auto Damage,0.22,Low,No major anomaly,Auto-process eligible,0
+CLM-1006,POL-9123,Auto Damage,0.68,Medium,Blur and edge inconsistency,Manual review recommended,2100
+CLM-1007,POL-3345,Auto Damage,0.91,High,AI-generated damage pattern,Escalate to SIU investigator,5100
+CLM-1008,POL-7022,Auto Damage,0.44,Medium,Missing EXIF metadata,Manual review recommended,900
+CLM-1009,POL-1855,Auto Damage,0.18,Low,No major anomaly,Auto-process eligible,0
+CLM-1010,POL-6488,Auto Damage,0.73,High,Repeated visual pattern,Escalate to SIU investigator,3600
