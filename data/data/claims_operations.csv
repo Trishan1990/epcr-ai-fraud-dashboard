@@ -1,0 +1,13 @@
+claim_id,policy_id,claim_type,claim_amount,fraud_score,severity,status,assigned_team,days_open,recommended_action
+CLM-3001,POL-78421,Auto Collision,18500,0.94,Critical,Escalated,SIU Team A,2,Immediate SIU escalation
+CLM-3002,POL-66219,Auto Damage,9200,0.86,High,Under Review,SIU Team B,4,Priority investigator review
+CLM-3003,POL-89177,Windshield Damage,3100,0.43,Medium,Manual Validation,Claims Review,1,Manual validation required
+CLM-3004,POL-44192,Auto Collision,1200,0.18,Low,Auto Approved,Auto Processing,0,Auto-process eligible
+CLM-3005,POL-77210,Auto Damage,14750,0.91,Critical,Escalated,SIU Team A,5,Immediate SIU escalation
+CLM-3006,POL-99012,Auto Collision,6800,0.72,High,Under Review,SIU Team B,3,Priority investigator review
+CLM-3007,POL-55280,Auto Damage,2400,0.39,Medium,Manual Validation,Claims Review,2,Manual validation required
+CLM-3008,POL-11892,Auto Collision,1750,0.12,Low,Auto Approved,Auto Processing,0,Auto-process eligible
+CLM-3009,POL-33418,Auto Damage,22100,0.97,Critical,Escalated,SIU Team A,6,Immediate SIU escalation
+CLM-3010,POL-67220,Auto Collision,7600,0.68,Medium,Manual Validation,Claims Review,3,Manual validation required
+CLM-3011,POL-49120,Auto Damage,11300,0.81,High,Under Review,SIU Team B,4,Priority investigator review
+CLM-3012,POL-82310,Auto Collision,950,0.09,Low,Auto Approved,Auto Processing,0,Auto-process eligible
