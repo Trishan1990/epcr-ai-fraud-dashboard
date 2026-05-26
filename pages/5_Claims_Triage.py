@@ -11,7 +11,7 @@ st.set_page_config(
 st.title("AI Claims Triage & Investigator Prioritization")
 st.caption("Operational workflow simulation for SIU escalation and claims review prioritization")
 
-claims = pd.read_csv("data/claims_operations.csv")
+claims = pd.read_csv("data/data/claims_operations.csv")
 
 # Sort high-risk claims first
 claims_sorted = claims.sort_values(
