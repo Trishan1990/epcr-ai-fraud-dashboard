@@ -5,3 +5,5 @@ plotly
 pillow
 opencv-python-headless
 scikit-learn
+networkx
+plotly
