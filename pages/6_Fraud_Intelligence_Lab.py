@@ -129,12 +129,12 @@ for _, row in df.iterrows():
     G.add_node(claim_node, node_type="Claim")
 
     entity_nodes = [
-        ("Repair Shop", row["repair_shop"]),
-        ("Phone", f"Phone-{row['phone_last4']}"),
-        ("Image", row["image_hash"]),
-        ("Vehicle", row["vehicle_id"]),
-        ("Claimant", row["claimant_id"]),
-    ]
+    ("Repair Shop", row["repair_shop"]),
+    ("Phone", f"Phone-{row['phone_last4']}"),
+    ("Image", row["image_hash"]),
+    ("Vehicle", f"{row['vehicle_year']} {row['vehicle_make']} {row['vehicle_model']}"),
+    ("Claimant", row["claimant_id"]),
+]
 
     for entity_type, entity_value in entity_nodes:
         G.add_node(entity_value, node_type=entity_type)
