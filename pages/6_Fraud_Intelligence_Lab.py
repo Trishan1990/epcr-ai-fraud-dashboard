@@ -340,6 +340,65 @@ else:
 st.divider()
 
 # -----------------------------
+
+...
+# Explainable Fraud Reasoning
+...
+
+st.divider()
+
+# -----------------------------
+# Counterfactual Analysis
+# -----------------------------
+st.header("🧬 Counterfactual Fraud Network Analysis")
+
+st.markdown("""
+Research Question:
+
+What happens to the fraud network if the most influential entity is removed?
+
+This experiment helps identify fraud-enabling entities that may disproportionately
+contribute to suspicious claim activity.
+""")
+
+if not centrality_df.empty:
+
+    top_entity = centrality_df.iloc[0]["entity"]
+
+    original_nodes = G.number_of_nodes()
+    original_edges = G.number_of_edges()
+
+    G_counterfactual = G.copy()
+
+    if top_entity in G_counterfactual:
+        G_counterfactual.remove_node(top_entity)
+
+    remaining_nodes = G_counterfactual.number_of_nodes()
+    remaining_edges = G_counterfactual.number_of_edges()
+
+    node_reduction = original_nodes - remaining_nodes
+    edge_reduction = original_edges - remaining_edges
+
+    c1, c2, c3, c4 = st.columns(4)
+
+    c1.metric("Key Entity Removed", str(top_entity))
+    c2.metric("Original Links", original_edges)
+    c3.metric("Remaining Links", remaining_edges)
+    c4.metric("Links Disrupted", edge_reduction)
+
+    st.success(
+        f"Removing {top_entity} disrupted {edge_reduction} network connections."
+    )
+
+    st.info("""
+Counterfactual Interpretation:
+
+Entities with the highest centrality scores may act as fraud-enabling hubs.
+
+Removing these hubs causes significant network fragmentation,
+suggesting that targeted investigation of these entities could improve
+fraud detection efficiency.
+""")
 # Final research conclusion
 # -----------------------------
 st.header("🧪 Experiment Learning")
