@@ -325,5 +325,18 @@ with r2:
     </div>
     """, unsafe_allow_html=True)
 
+st.markdown("<div class='section-header'>📋 Log 6 — Live Investigator Survey</div>", unsafe_allow_html=True)
+st.markdown("""
+<div class='thesis-card'>
+  <strong>Are you an insurance professional?</strong> EPCR AI is currently collecting feedback
+  from investigators, claims adjusters, and fraud analysts to validate whether graph-based
+  intelligence outperforms standalone fraud scores in real investigative workflows.
+  Takes 3 minutes. Includes a live demo.<br><br>
+  <a href='https://docs.google.com/forms/d/e/1FAIpQLSda7mb0JO_GahZfwBSCJ5qNe4GmBQmRqKFPrJp84vCqRkG28Q/viewform'
+  target='_blank' style='color:#2563eb;font-weight:600;'>→ Take the survey</a>
+  &nbsp;·&nbsp; Already 6 responses including a VP of Data & Governance and a regional insurer.
+</div>
+""", unsafe_allow_html=True)
+
 st.markdown("---")
 st.caption("EPCR AI · Claims Fraud Command Center · InsurTech NY Winner · UConn AI Venture Velocity Challenge 2026 · Created by Trishan1990")
