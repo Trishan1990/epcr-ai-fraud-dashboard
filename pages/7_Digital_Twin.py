@@ -296,6 +296,15 @@ st.markdown("""
   insurer representative) are now being collected and will be published in the next experiment log.
 </div>
 """, unsafe_allow_html=True)
+st.markdown("""
+<div class='insight-card'>
+  <strong>🔗 Verified on Kaggle:</strong> This analysis was run on the real
+  IEEE-CIS Fraud Detection dataset (590,540 transactions) and is publicly
+  verifiable at:
+  <a href='https://www.kaggle.com/code/trishanguddu/epcr-ai-log-5-fraud-digital-twin'
+  target='_blank'>kaggle.com/code/trishanguddu/epcr-ai-log-5-fraud-digital-twin</a>
+</div>
+""", unsafe_allow_html=True)
 
 st.markdown("---")
 st.caption("EPCR AI · Log 5 · IEEE-CIS Fraud Detection Dataset · UConn AI Venture Velocity Challenge 2026 · Created by Trishan1990")
